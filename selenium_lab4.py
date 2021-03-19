@@ -6,10 +6,10 @@ cutie = "https://i.pinimg.com/originals/03/6b/c1/036bc18082a8322c39afc861e59c188
 driver = webdriver.Firefox();
 
 l = []
-f = open('D:\sitelist.txt', 'r')
+f = open('sitelist.txt', 'r')
 l = f.read().split('*')
 f.close()
-f = open('D:\sitelistout.txt', 'w')
+f = open('sitelistout.txt', 'w')
 for s in l:
     driver.get(s);
     elements = driver.find_elements_by_tag_name('img')
